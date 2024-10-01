@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Expecting Health</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1600px;
+            height: 90vh;
+            padding: 20px;
+        }
+
+        /* Left image section */
+        .image-side {
+            width: 40%;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Right text section */
+        .text-side {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 40px;
+            background-color: white;
+        }
+
+        .text-side h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text-side p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .text-side button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .text-side button:hover {
+            background-color: #ff4c4c;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-side {
+                width: 100%;
+                height: 40vh;
+            }
+
+            .text-side {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Side with Image -->
+        <div class="image-side">
+            <img src="img/pregnant-woman-outline.png" alt="Pregnant woman outline">
+        </div>
+
+        <!-- Right Side with Text -->
+        <div class="text-side">
+            <h1>Starting a family doesn’t have to be scary</h1>
+            <p>From the first signs to early parenthood, our intelligent assistant guides you through each milestone with tailored advice, personalized prompts, and recommendations for you and your baby. Feel empowered, informed, and in control—wherever your journey takes you.</p>
+            <button>Join the Waitlist</button>
+        </div>
+    </div>
+</body>
+</html>
+
